@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bitcoin Bull</title>
+</head>
+	<body>
+		<link rel="stylesheet" href="../static/bootstrap.min.css">
+		<link rel="stylesheet" href="../static/config.css">
+    	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+		<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+		<div class="intro">
+			<br>
+			<h1>Bitcoin Bull</h1>
+			<!-- <p>Build Your Crypto Investment Strategy With Dead Simple Backtesting</p> -->
+			<p>Build Your Crypto Investment Strategy With Lightning Quick Backtesting</p>
+		</div>
+		<div class="alert alert-danger" role="alert"  id="dateAlert" style="text-align: center;">
+  			<b>Oh snap! Please make sure the end date occurs after the start date.</b>
+		</div>
+		<div class="content">
+			<div class="params">
+					<form>
+					  <fieldset>
+					    <legend>Parameters</legend>
+					    <table class="paramsTbl">
+							<tr class="paramsRow">
+							    <td class="paramLabel"><label>Start Date</label></td>
+							    <td class="paramLabel"><label> End Date</label></td>
+							    <td class="paramLabel"><label> BTC Weight</label></td>
+							    <td class="paramLabel"><label> S&P 500 Weight</label></td>
+							</tr>
+							<tr class="paramsRow">
+							    <td class="paramInput"><input  value="2014-04-05" min="2014-04-05" type="date" class="form-control" id="startDateInput" placeholder="Start Date"></td>
+							    <td class="paramInput"><input min="2014-04-06"type="date" class="form-control" id="endDateInput" placeholder="End Date"></td>
+							    <td class="paramInput"><input type="number" class="form-control" id="btcWeight" value=0.01 placeholder="BTC Weight" step=0.1 min=0 max=1></td>
+							    <td class="paramInput"><input type="number" class="form-control" id="sp500Weight" value=0.99 placeholder="S&P 500 Weight" step=0.1 min=0 max=1></td>
+							    <td class="paramInput" id="goBtn"><button type="button" width="20%" class="btn btn-outline-primary">Go</button></td>
+							</tr>
+						</table>
+					    
+					</fieldset>
+					</form>
+
+			</div>
+			<br>
+			
+			<div class="graph"> 
+				<div style="width:100%;">
+					<div id="line-chart"></div>
+				</div>
+			</div>
+
+			<table class="metrics" style="width:100%;">
+				<tr style="width:100%;">
+					<td class="riskMetric" style="width:25%">
+						<div class="card border-secondary mb-3">
+						  <div class="card-header">Return to Date</div>
+						  <div class="card-body">
+						    <h5 class="card-title" id="returnCard" >0.2</h5>
+						  </div>
+						</div>
+					</td>
+					<td class="riskMetric" style="width:25%">
+						<div class="card border-secondary mb-3">
+						  <div class="card-header">Alpha</div>
+						  <div class="card-body">
+						    <h5 class="card-title" id="alphaCard">0.2</h5>
+						  </div>
+						</div>
+					</td>
+					<td  class="riskMetric" style="width:25%">
+						<div class="card border-secondary mb-3">
+						  <div class="card-header">Beta</div>
+						  <div class="card-body">
+						    <h5 class="card-title" id="betaCard">0.2</h5>
+						  </div>
+						</div>
+					</td>
+					<td class="riskMetric" style="width:25%">
+						<div class="card border-secondary mb-3">
+						  <div class="card-header">Sharpe Ratio</div>
+						  <div class="card-body">
+						    <h5 class="card-title" id="sharpeCard">0.2</h5>
+						  </div>
+						</div>
+					</td>
+				</tr>
+			</table> 
+		
+<!-- 		<script src="../static/chart_gen.js"></script>  -->
+		<script src="../static/btcBull.js"></script>
+	</body>
+</html>
