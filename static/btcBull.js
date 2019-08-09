@@ -57,7 +57,7 @@ function goBtnClick(first) {
 	document.getElementById("sp500Weight").value = spWeight;
 	document.getElementById("btcWeight").value = btcWeight;
 
-	var url = "https://bitcoinbull.herokuapp.com/getChartVals?start=" + startDate + "&end=" + endDate + "&btc_weight=" + btcWeight + "&sp_weight=" + spWeight;
+	var url = "/getChartVals?start=" + startDate + "&end=" + endDate + "&btc_weight=" + btcWeight + "&sp_weight=" + spWeight;
 	
 	async function callChartDataAPI() 
 	{
