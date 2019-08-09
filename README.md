@@ -1,5 +1,5 @@
 # bitcoinbull
-A lightning quick backtesting tool for Bitcoin/S&amp;P 500 portfolios
+A lightning fast backtesting tool for Bitcoin/S&amp;P 500 portfolios
 
 Try it out here: https://bitcoinbull.herokuapp.com/
 
