@@ -1,4 +1,5 @@
-# bitcoinbull
+# Bitcoin Bull
+
 Backtesting tool for Bitcoin/S&amp;P 500 portfolios
 
 Try it out here: https://bitcoinbull.herokuapp.com/
